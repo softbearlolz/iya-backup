@@ -1,4 +1,4 @@
-嚜�<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!-- saved from url=(0043)diablo2/?calc=mf -->
 <HTML><HEAD>
 
@@ -71,28 +71,28 @@ rel=stylesheet>
 <table cellSpacing="0" cellPadding="0" width="100%" border="0" id="table1">
   <tr>
     <td vAlign="top" width="90%" background>
-    <p align="center"><font color="#cc66ff" size="6">���撖嗥��閮�蝞���砍��</font></p>
-	<p align="center"><font color="#cc66ff">���撖嗥�����������撠望��&quot;</font><font color="#ff00ff">�����游之���璈�������敺�</font><font color="#0000ff">擳�瘜�</font><font color="#ff00ff">鋆����</font><font color="#cc66ff">&quot;</font></p>
-	<p align="center"><font color="#cc66ff">��詨��銋����隤�</font><font color="#ffff00">蝔����</font><font color="#00ff00">���憟�</font><font color="#cc66ff">���</font><font color="#808000">��函��</font><font color="#cc66ff">��拙��</font></p>
-	<p align="center"><font color="#ffffff" size="2">���撖嗥��100銝虫��蝑����100%�����賡��瘜�鋆���� 
-	�����臬�����1������&quot;���敺����鋆����&quot;���璈����</font></p>
+    <p align="center"><font color="#cc66ff" size="6">打寶率計算公式</font></p>
+	<p align="center"><font color="#cc66ff">打寶率的意思就是&quot;</font><font color="#ff00ff">有更大的機率取得</font><font color="#0000ff">魔法</font><font color="#ff00ff">裝備</font><font color="#cc66ff">&quot;</font></p>
+	<p align="center"><font color="#cc66ff">相對也包誇</font><font color="#ffff00">稀有</font><font color="#00ff00">成套</font><font color="#cc66ff">與</font><font color="#808000">獨特</font><font color="#cc66ff">物品</font></p>
+	<p align="center"><font color="#ffffff" size="2">打寶率100並不等於100%掉落魔法裝備 
+	而是增加1倍的&quot;取得某裝備&quot;的機率</font></p>
 	<p align="center"><font color="#ff00ff"><b>
 	<a href="JENNY_HERO.htm"><font color="#ff00ff">
-	��唾牧銝剔��1087摰�蝢����撖嗆��撣�</font></a></b></font></p>
-	<H4 align="center">撠�撖嗥��閮�蝞�璈�</H4>
+	傳說中的1087完美打寶法師</font></a></b></font></p>
+	<H4 align="center">尋寶率計算機</H4>
 <FORM name=MFs onsubmit="return false;">
 <P align="center">MF: +<INPUT maxLength=5 onchange=Update(); size=5 name=MF>% 
-<INPUT onclick=Update(); type=submit value=��亥岷 onsubmit="Update();"><BR><SPAN 
+<INPUT onclick=Update(); type=submit value=查詢 onsubmit="Update();"><BR><SPAN 
 id=span_EffectiveMF style="DISPLAY: none">
 <TEXTAREA name=textarea_EffectiveMF rows=5 readOnly cols=91></TEXTAREA> 
 </SPAN></P></FORM>
 	<table border="1" width="100%" id="table2">
 		<tr>
-			<td align="center"><font color="#CC66FF">撠�撖�</font></td>
-			<td align="center"><font color="#0000FF">擳�瘜�</font></td>
-			<td align="center"><font color="#FFFF00">蝔����</font></td>
-			<td align="center"><font color="#00FF00">���憟�</font></td>
-			<td align="center"><font color="#808000">��函��</font></td>
+			<td align="center"><font color="#CC66FF">尋寶</font></td>
+			<td align="center"><font color="#0000FF">魔法</font></td>
+			<td align="center"><font color="#FFFF00">稀有</font></td>
+			<td align="center"><font color="#00FF00">成套</font></td>
+			<td align="center"><font color="#808000">獨特</font></td>
 		</tr>
 		<tr>
 			<td align="center"><font color="#00FFFF">50</font></td>
@@ -249,7 +249,7 @@ id=span_EffectiveMF style="DISPLAY: none">
 			<td align="center"><font color="#808000">203</font></td>
 		</tr>
 	</table>
-	<td align="center"><font size="2" face="��啁敦���擃�">
+	<td align="center"><font size="2" face="新細明體">
 <SCRIPT language=JavaScript type=text/javascript>
 function Update() {
     var EffectiveMF;
@@ -261,10 +261,10 @@ function Update() {
     EffectiveMF_Set=parseInt(MF*Set/(MF+Set));
     EffectiveMF_Rare=parseInt(MF*Rare/(MF+Rare));
     document.getElementById("span_EffectiveMF").style.display = 'inline';
-    document.MFs["textarea_EffectiveMF"].value =  "擳�瘜�鋆����: +"+MF+"%\n";
-    document.MFs["textarea_EffectiveMF"].value += "蝔����鋆����: +"+EffectiveMF_Rare+"%\n";
-    document.MFs["textarea_EffectiveMF"].value += "���憟�鋆����: +"+EffectiveMF_Set+"%\n";
-    document.MFs["textarea_EffectiveMF"].value += "��函�寡�����: +"+EffectiveMF_Unique+"%";
+    document.MFs["textarea_EffectiveMF"].value =  "魔法裝備: +"+MF+"%\n";
+    document.MFs["textarea_EffectiveMF"].value += "稀有裝備: +"+EffectiveMF_Rare+"%\n";
+    document.MFs["textarea_EffectiveMF"].value += "成套裝備: +"+EffectiveMF_Set+"%\n";
+    document.MFs["textarea_EffectiveMF"].value += "獨特裝備: +"+EffectiveMF_Unique+"%";
 }
 </SCRIPT>
 
